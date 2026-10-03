@@ -5,6 +5,7 @@ Personal learning material for `tokio-rs/tokio` (snapshot `8667843`). Not part o
 | File | What it is |
 |---|---|
 | [`TOKIO_FUNCTIONAL_GUIDE.md`](./TOKIO_FUNCTIONAL_GUIDE.md) | **Start here.** What Tokio does, every feature area, how the components connect, the main flows (program, task, scheduling, I/O, timers, channels, blocking, cancellation, shutdown), rules, pitfalls and a cheat sheet |
+| [`components/`](./components/README.md) | **One document per component block** (tasks, time, net/io, sync, fs/process/signal, scheduler, timer driver, I/O driver, blocking pool): responsibility & boundary, files & LOC, data structures, interactions, functions, flows, gotchas, tests |
 | [`TOKIO_ANALYSIS.md`](./TOKIO_ANALYSIS.md) | Codebase statistics: files, LOC, crates, modules, percentages, architecture overview, contribution workflow |
 | [`HOW_TOKIO_WORKS.md`](./HOW_TOKIO_WORKS.md) | **Then this, for internals.** Function-by-function walkthrough in execution order: startup, spawn, task state, worker loop, parking, waking, I/O, timers, coop, sync, blocking, `select!`, shutdown, and an end-to-end request trace |
 | [`functions/`](./functions/README.md) | Index of all 5,480 functions, categorized by component, kind (public / internal / trait impl / test) and role, with each function's doc summary. `functions.csv` has the raw data |

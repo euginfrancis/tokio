@@ -1,0 +1,2596 @@
+{
+ "tasks": {
+  "files": [
+   {
+    "file": "tokio/src/runtime/task/abort.rs",
+    "code": 44,
+    "comment": 2,
+    "doc": 49,
+    "blank": 10
+   },
+   {
+    "file": "tokio/src/runtime/task/core.rs",
+    "code": 331,
+    "comment": 67,
+    "doc": 136,
+    "blank": 59
+   },
+   {
+    "file": "tokio/src/runtime/task/error.rs",
+    "code": 99,
+    "comment": 5,
+    "doc": 75,
+    "blank": 16
+   },
+   {
+    "file": "tokio/src/runtime/task/harness.rs",
+    "code": 318,
+    "comment": 125,
+    "doc": 61,
+    "blank": 65
+   },
+   {
+    "file": "tokio/src/runtime/task/id.rs",
+    "code": 38,
+    "comment": 0,
+    "doc": 43,
+    "blank": 10
+   },
+   {
+    "file": "tokio/src/runtime/task/join.rs",
+    "code": 79,
+    "comment": 15,
+    "doc": 263,
+    "blank": 20
+   },
+   {
+    "file": "tokio/src/runtime/task/list.rs",
+    "code": 253,
+    "comment": 32,
+    "doc": 38,
+    "blank": 45
+   },
+   {
+    "file": "tokio/src/runtime/task/mod.rs",
+    "code": 348,
+    "comment": 27,
+    "doc": 232,
+    "blank": 80
+   },
+   {
+    "file": "tokio/src/runtime/task/raw.rs",
+    "code": 252,
+    "comment": 12,
+    "doc": 60,
+    "blank": 60
+   },
+   {
+    "file": "tokio/src/runtime/task/state.rs",
+    "code": 399,
+    "comment": 77,
+    "doc": 80,
+    "blank": 101
+   },
+   {
+    "file": "tokio/src/runtime/task/trace/mod.rs",
+    "code": 270,
+    "comment": 51,
+    "doc": 84,
+    "blank": 61
+   },
+   {
+    "file": "tokio/src/runtime/task/trace/symbol.rs",
+    "code": 71,
+    "comment": 1,
+    "doc": 12,
+    "blank": 9
+   },
+   {
+    "file": "tokio/src/runtime/task/trace/trace_impl.rs",
+    "code": 19,
+    "comment": 0,
+    "doc": 4,
+    "blank": 7
+   },
+   {
+    "file": "tokio/src/runtime/task/trace/tree.rs",
+    "code": 92,
+    "comment": 2,
+    "doc": 13,
+    "blank": 19
+   },
+   {
+    "file": "tokio/src/runtime/task/waker.rs",
+    "code": 88,
+    "comment": 17,
+    "doc": 5,
+    "blank": 14
+   },
+   {
+    "file": "tokio/src/task/blocking.rs",
+    "code": 20,
+    "comment": 0,
+    "doc": 205,
+    "blank": 2
+   },
+   {
+    "file": "tokio/src/task/builder.rs",
+    "code": 118,
+    "comment": 0,
+    "doc": 107,
+    "blank": 10
+   },
+   {
+    "file": "tokio/src/task/coop/consume_budget.rs",
+    "code": 15,
+    "comment": 0,
+    "doc": 23,
+    "blank": 1
+   },
+   {
+    "file": "tokio/src/task/coop/mod.rs",
+    "code": 258,
+    "comment": 31,
+    "doc": 221,
+    "blank": 64
+   },
+   {
+    "file": "tokio/src/task/coop/unconstrained.rs",
+    "code": 34,
+    "comment": 0,
+    "doc": 6,
+    "blank": 5
+   },
+   {
+    "file": "tokio/src/task/join_set.rs",
+    "code": 312,
+    "comment": 24,
+    "doc": 465,
+    "blank": 50
+   },
+   {
+    "file": "tokio/src/task/local.rs",
+    "code": 580,
+    "comment": 122,
+    "doc": 529,
+    "blank": 116
+   },
+   {
+    "file": "tokio/src/task/mod.rs",
+    "code": 44,
+    "comment": 1,
+    "doc": 276,
+    "blank": 14
+   },
+   {
+    "file": "tokio/src/task/spawn.rs",
+    "code": 46,
+    "comment": 0,
+    "doc": 165,
+    "blank": 5
+   },
+   {
+    "file": "tokio/src/task/task_local.rs",
+    "code": 241,
+    "comment": 23,
+    "doc": 186,
+    "blank": 38
+   },
+   {
+    "file": "tokio/src/task/yield_now.rs",
+    "code": 17,
+    "comment": 6,
+    "doc": 31,
+    "blank": 6
+   }
+  ],
+  "n_files": 26,
+  "code": 4386,
+  "doc": 4009,
+  "test_files": [
+   "tokio/tests/async_send_sync.rs",
+   "tokio/tests/coop_budget.rs",
+   "tokio/tests/task_abort.rs",
+   "tokio/tests/task_blocking.rs",
+   "tokio/tests/task_builder.rs",
+   "tokio/tests/task_emscripten.rs",
+   "tokio/tests/task_hooks.rs",
+   "tokio/tests/task_id.rs",
+   "tokio/tests/task_join_set.rs",
+   "tokio/tests/task_local.rs",
+   "tokio/tests/task_local_set.rs",
+   "tokio/tests/task_panic.rs",
+   "tokio/tests/task_trace_self.rs",
+   "tokio/tests/task_yield_now.rs"
+  ],
+  "test_code": 3604,
+  "test_fns": 130,
+  "functions": 401,
+  "kinds": {
+   "Crate-internal": 145,
+   "Public API": 75,
+   "Trait impl": 65,
+   "Private helper": 104,
+   "Test": 7,
+   "Trait method (declaration/default)": 5
+  },
+  "async_fns": 7,
+  "unsafe_fns": 48,
+  "unsafe_mentions": 170
+ },
+ "time": {
+  "files": [
+   {
+    "file": "tokio/src/time/clock.rs",
+    "code": 167,
+    "comment": 8,
+    "doc": 161,
+    "blank": 46
+   },
+   {
+    "file": "tokio/src/time/error.rs",
+    "code": 71,
+    "comment": 2,
+    "doc": 30,
+    "blank": 20
+   },
+   {
+    "file": "tokio/src/time/instant.rs",
+    "code": 94,
+    "comment": 0,
+    "doc": 95,
+    "blank": 26
+   },
+   {
+    "file": "tokio/src/time/interval.rs",
+    "code": 132,
+    "comment": 20,
+    "doc": 455,
+    "blank": 30
+   },
+   {
+    "file": "tokio/src/time/mod.rs",
+    "code": 20,
+    "comment": 3,
+    "doc": 85,
+    "blank": 8
+   },
+   {
+    "file": "tokio/src/time/sleep.rs",
+    "code": 198,
+    "comment": 14,
+    "doc": 228,
+    "blank": 35
+   },
+   {
+    "file": "tokio/src/time/timeout.rs",
+    "code": 87,
+    "comment": 9,
+    "doc": 139,
+    "blank": 16
+   }
+  ],
+  "n_files": 7,
+  "code": 769,
+  "doc": 1249,
+  "test_files": [
+   "tokio/tests/time_alt.rs",
+   "tokio/tests/time_interval.rs",
+   "tokio/tests/time_panic.rs",
+   "tokio/tests/time_pause.rs",
+   "tokio/tests/time_rt.rs",
+   "tokio/tests/time_sleep.rs",
+   "tokio/tests/time_timeout.rs",
+   "tokio/tests/time_wasm.rs"
+  ],
+  "test_code": 1409,
+  "test_fns": 76,
+  "functions": 78,
+  "kinds": {
+   "Crate-internal": 16,
+   "Private helper": 7,
+   "Public API": 39,
+   "Trait impl": 16
+  },
+  "async_fns": 2,
+  "unsafe_fns": 1,
+  "unsafe_mentions": 2
+ },
+ "net_io": {
+  "files": [
+   {
+    "file": "tokio/src/io/async_buf_read.rs",
+    "code": 57,
+    "comment": 0,
+    "doc": 51,
+    "blank": 13
+   },
+   {
+    "file": "tokio/src/io/async_fd.rs",
+    "code": 368,
+    "comment": 7,
+    "doc": 992,
+    "blank": 72
+   },
+   {
+    "file": "tokio/src/io/async_read.rs",
+    "code": 76,
+    "comment": 2,
+    "doc": 47,
+    "blank": 10
+   },
+   {
+    "file": "tokio/src/io/async_seek.rs",
+    "code": 46,
+    "comment": 0,
+    "doc": 43,
+    "blank": 9
+   },
+   {
+    "file": "tokio/src/io/async_write.rs",
+    "code": 240,
+    "comment": 0,
+    "doc": 145,
+    "blank": 42
+   },
+   {
+    "file": "tokio/src/io/blocking.rs",
+    "code": 295,
+    "comment": 17,
+    "doc": 37,
+    "blank": 55
+   },
+   {
+    "file": "tokio/src/io/bsd/poll_aio.rs",
+    "code": 98,
+    "comment": 12,
+    "doc": 87,
+    "blank": 21
+   },
+   {
+    "file": "tokio/src/io/interest.rs",
+    "code": 175,
+    "comment": 20,
+    "doc": 107,
+    "blank": 43
+   },
+   {
+    "file": "tokio/src/io/join.rs",
+    "code": 98,
+    "comment": 0,
+    "doc": 13,
+    "blank": 19
+   },
+   {
+    "file": "tokio/src/io/mod.rs",
+    "code": 81,
+    "comment": 5,
+    "doc": 198,
+    "blank": 25
+   },
+   {
+    "file": "tokio/src/io/poll_evented.rs",
+    "code": 183,
+    "comment": 24,
+    "doc": 83,
+    "blank": 29
+   },
+   {
+    "file": "tokio/src/io/read_buf.rs",
+    "code": 173,
+    "comment": 28,
+    "doc": 110,
+    "blank": 33
+   },
+   {
+    "file": "tokio/src/io/ready.rs",
+    "code": 163,
+    "comment": 1,
+    "doc": 106,
+    "blank": 52
+   },
+   {
+    "file": "tokio/src/io/seek.rs",
+    "code": 49,
+    "comment": 2,
+    "doc": 1,
+    "blank": 5
+   },
+   {
+    "file": "tokio/src/io/split.rs",
+    "code": 115,
+    "comment": 1,
+    "doc": 23,
+    "blank": 27
+   },
+   {
+    "file": "tokio/src/io/stderr.rs",
+    "code": 66,
+    "comment": 3,
+    "doc": 66,
+    "blank": 13
+   },
+   {
+    "file": "tokio/src/io/stdin.rs",
+    "code": 56,
+    "comment": 3,
+    "doc": 28,
+    "blank": 11
+   },
+   {
+    "file": "tokio/src/io/stdio_common.rs",
+    "code": 161,
+    "comment": 33,
+    "doc": 7,
+    "blank": 25
+   },
+   {
+    "file": "tokio/src/io/stdout.rs",
+    "code": 66,
+    "comment": 3,
+    "doc": 155,
+    "blank": 12
+   },
+   {
+    "file": "tokio/src/io/uring/mod.rs",
+    "code": 6,
+    "comment": 0,
+    "doc": 0,
+    "blank": 0
+   },
+   {
+    "file": "tokio/src/io/uring/open.rs",
+    "code": 60,
+    "comment": 1,
+    "doc": 6,
+    "blank": 12
+   },
+   {
+    "file": "tokio/src/io/uring/read.rs",
+    "code": 77,
+    "comment": 7,
+    "doc": 13,
+    "blank": 17
+   },
+   {
+    "file": "tokio/src/io/uring/rename.rs",
+    "code": 47,
+    "comment": 1,
+    "doc": 2,
+    "blank": 10
+   },
+   {
+    "file": "tokio/src/io/uring/statx.rs",
+    "code": 108,
+    "comment": 28,
+    "doc": 8,
+    "blank": 17
+   },
+   {
+    "file": "tokio/src/io/uring/utils.rs",
+    "code": 21,
+    "comment": 0,
+    "doc": 5,
+    "blank": 5
+   },
+   {
+    "file": "tokio/src/io/uring/write.rs",
+    "code": 40,
+    "comment": 4,
+    "doc": 2,
+    "blank": 9
+   },
+   {
+    "file": "tokio/src/io/util/async_buf_read_ext.rs",
+    "code": 47,
+    "comment": 0,
+    "doc": 303,
+    "blank": 7
+   },
+   {
+    "file": "tokio/src/io/util/async_read_ext.rs",
+    "code": 104,
+    "comment": 0,
+    "doc": 1320,
+    "blank": 32
+   },
+   {
+    "file": "tokio/src/io/util/async_seek_ext.rs",
+    "code": 26,
+    "comment": 0,
+    "doc": 66,
+    "blank": 4
+   },
+   {
+    "file": "tokio/src/io/util/async_write_ext.rs",
+    "code": 107,
+    "comment": 0,
+    "doc": 1198,
+    "blank": 32
+   },
+   {
+    "file": "tokio/src/io/util/buf_reader.rs",
+    "code": 202,
+    "comment": 25,
+    "doc": 60,
+    "blank": 30
+   },
+   {
+    "file": "tokio/src/io/util/buf_stream.rs",
+    "code": 140,
+    "comment": 1,
+    "doc": 48,
+    "blank": 23
+   },
+   {
+    "file": "tokio/src/io/util/buf_writer.rs",
+    "code": 229,
+    "comment": 14,
+    "doc": 40,
+    "blank": 28
+   },
+   {
+    "file": "tokio/src/io/util/chain.rs",
+    "code": 116,
+    "comment": 2,
+    "doc": 13,
+    "blank": 15
+   },
+   {
+    "file": "tokio/src/io/util/copy.rs",
+    "code": 227,
+    "comment": 16,
+    "doc": 53,
+    "blank": 17
+   },
+   {
+    "file": "tokio/src/io/util/copy_bidirectional.rs",
+    "code": 99,
+    "comment": 2,
+    "doc": 39,
+    "blank": 11
+   },
+   {
+    "file": "tokio/src/io/util/copy_buf.rs",
+    "code": 111,
+    "comment": 3,
+    "doc": 53,
+    "blank": 9
+   },
+   {
+    "file": "tokio/src/io/util/empty.rs",
+    "code": 100,
+    "comment": 0,
+    "doc": 48,
+    "blank": 16
+   },
+   {
+    "file": "tokio/src/io/util/fill_buf.rs",
+    "code": 43,
+    "comment": 9,
+    "doc": 1,
+    "blank": 6
+   },
+   {
+    "file": "tokio/src/io/util/flush.rs",
+    "code": 35,
+    "comment": 1,
+    "doc": 6,
+    "blank": 5
+   },
+   {
+    "file": "tokio/src/io/util/lines.rs",
+    "code": 79,
+    "comment": 0,
+    "doc": 56,
+    "blank": 17
+   },
+   {
+    "file": "tokio/src/io/util/mem.rs",
+    "code": 290,
+    "comment": 12,
+    "doc": 114,
+    "blank": 41
+   },
+   {
+    "file": "tokio/src/io/util/mod.rs",
+    "code": 80,
+    "comment": 3,
+    "doc": 0,
+    "blank": 29
+   },
+   {
+    "file": "tokio/src/io/util/read.rs",
+    "code": 40,
+    "comment": 1,
+    "doc": 9,
+    "blank": 5
+   },
+   {
+    "file": "tokio/src/io/util/read_buf.rs",
+    "code": 56,
+    "comment": 3,
+    "doc": 1,
+    "blank": 11
+   },
+   {
+    "file": "tokio/src/io/util/read_exact.rs",
+    "code": 55,
+    "comment": 2,
+    "doc": 9,
+    "blank": 7
+   },
+   {
+    "file": "tokio/src/io/util/read_int.rs",
+    "code": 135,
+    "comment": 2,
+    "doc": 1,
+    "blank": 24
+   },
+   {
+    "file": "tokio/src/io/util/read_line.rs",
+    "code": 92,
+    "comment": 7,
+    "doc": 5,
+    "blank": 13
+   },
+   {
+    "file": "tokio/src/io/util/read_to_end.rs",
+    "code": 101,
+    "comment": 23,
+    "doc": 3,
+    "blank": 17
+   },
+   {
+    "file": "tokio/src/io/util/read_to_string.rs",
+    "code": 61,
+    "comment": 7,
+    "doc": 1,
+    "blank": 9
+   },
+   {
+    "file": "tokio/src/io/util/read_until.rs",
+    "code": 73,
+    "comment": 3,
+    "doc": 2,
+    "blank": 6
+   },
+   {
+    "file": "tokio/src/io/util/repeat.rs",
+    "code": 36,
+    "comment": 0,
+    "doc": 31,
+    "blank": 7
+   },
+   {
+    "file": "tokio/src/io/util/shutdown.rs",
+    "code": 35,
+    "comment": 1,
+    "doc": 5,
+    "blank": 5
+   },
+   {
+    "file": "tokio/src/io/util/sink.rs",
+    "code": 51,
+    "comment": 0,
+    "doc": 34,
+    "blank": 9
+   },
+   {
+    "file": "tokio/src/io/util/split.rs",
+    "code": 69,
+    "comment": 1,
+    "doc": 39,
+    "blank": 12
+   },
+   {
+    "file": "tokio/src/io/util/take.rs",
+    "code": 90,
+    "comment": 4,
+    "doc": 24,
+    "blank": 20
+   },
+   {
+    "file": "tokio/src/io/util/vec_with_initialized.rs",
+    "code": 82,
+    "comment": 28,
+    "doc": 16,
+    "blank": 16
+   },
+   {
+    "file": "tokio/src/io/util/write.rs",
+    "code": 37,
+    "comment": 1,
+    "doc": 3,
+    "blank": 5
+   },
+   {
+    "file": "tokio/src/io/util/write_all.rs",
+    "code": 54,
+    "comment": 1,
+    "doc": 0,
+    "blank": 6
+   },
+   {
+    "file": "tokio/src/io/util/write_all_buf.rs",
+    "code": 61,
+    "comment": 0,
+    "doc": 3,
+    "blank": 8
+   },
+   {
+    "file": "tokio/src/io/util/write_buf.rs",
+    "code": 52,
+    "comment": 0,
+    "doc": 3,
+    "blank": 9
+   },
+   {
+    "file": "tokio/src/io/util/write_int.rs",
+    "code": 135,
+    "comment": 2,
+    "doc": 0,
+    "blank": 20
+   },
+   {
+    "file": "tokio/src/io/util/write_vectored.rs",
+    "code": 40,
+    "comment": 1,
+    "doc": 1,
+    "blank": 5
+   },
+   {
+    "file": "tokio/src/net/addr.rs",
+    "code": 212,
+    "comment": 25,
+    "doc": 17,
+    "blank": 79
+   },
+   {
+    "file": "tokio/src/net/lookup_host.rs",
+    "code": 11,
+    "comment": 0,
+    "doc": 25,
+    "blank": 2
+   },
+   {
+    "file": "tokio/src/net/mod.rs",
+    "code": 30,
+    "comment": 0,
+    "doc": 27,
+    "blank": 7
+   },
+   {
+    "file": "tokio/src/net/tcp/listener.rs",
+    "code": 167,
+    "comment": 0,
+    "doc": 259,
+    "blank": 33
+   },
+   {
+    "file": "tokio/src/net/tcp/mod.rs",
+    "code": 10,
+    "comment": 0,
+    "doc": 1,
+    "blank": 5
+   },
+   {
+    "file": "tokio/src/net/tcp/socket.rs",
+    "code": 426,
+    "comment": 8,
+    "doc": 573,
+    "blank": 57
+   },
+   {
+    "file": "tokio/src/net/tcp/split.rs",
+    "code": 118,
+    "comment": 2,
+    "doc": 274,
+    "blank": 29
+   },
+   {
+    "file": "tokio/src/net/tcp/split_owned.rs",
+    "code": 176,
+    "comment": 4,
+    "doc": 290,
+    "blank": 37
+   },
+   {
+    "file": "tokio/src/net/tcp/stream.rs",
+    "code": 404,
+    "comment": 19,
+    "doc": 1090,
+    "blank": 84
+   },
+   {
+    "file": "tokio/src/net/udp.rs",
+    "code": 623,
+    "comment": 23,
+    "doc": 1607,
+    "blank": 105
+   },
+   {
+    "file": "tokio/src/net/unix/datagram/mod.rs",
+    "code": 1,
+    "comment": 0,
+    "doc": 1,
+    "blank": 1
+   },
+   {
+    "file": "tokio/src/net/unix/datagram/socket.rs",
+    "code": 292,
+    "comment": 14,
+    "doc": 1255,
+    "blank": 64
+   },
+   {
+    "file": "tokio/src/net/unix/listener.rs",
+    "code": 108,
+    "comment": 1,
+    "doc": 135,
+    "blank": 19
+   },
+   {
+    "file": "tokio/src/net/unix/mod.rs",
+    "code": 21,
+    "comment": 3,
+    "doc": 4,
+    "blank": 11
+   },
+   {
+    "file": "tokio/src/net/unix/pipe.rs",
+    "code": 335,
+    "comment": 20,
+    "doc": 1123,
+    "blank": 78
+   },
+   {
+    "file": "tokio/src/net/unix/socket.rs",
+    "code": 118,
+    "comment": 2,
+    "doc": 127,
+    "blank": 23
+   },
+   {
+    "file": "tokio/src/net/unix/socketaddr.rs",
+    "code": 36,
+    "comment": 0,
+    "doc": 22,
+    "blank": 8
+   },
+   {
+    "file": "tokio/src/net/unix/split.rs",
+    "code": 106,
+    "comment": 0,
+    "doc": 198,
+    "blank": 27
+   },
+   {
+    "file": "tokio/src/net/unix/split_owned.rs",
+    "code": 165,
+    "comment": 4,
+    "doc": 215,
+    "blank": 35
+   },
+   {
+    "file": "tokio/src/net/unix/stream.rs",
+    "code": 281,
+    "comment": 19,
+    "doc": 785,
+    "blank": 60
+   },
+   {
+    "file": "tokio/src/net/unix/ucred.rs",
+    "code": 356,
+    "comment": 10,
+    "doc": 12,
+    "blank": 73
+   },
+   {
+    "file": "tokio/src/net/windows/mod.rs",
+    "code": 1,
+    "comment": 0,
+    "doc": 1,
+    "blank": 1
+   },
+   {
+    "file": "tokio/src/net/windows/named_pipe.rs",
+    "code": 592,
+    "comment": 29,
+    "doc": 2004,
+    "blank": 110
+   }
+  ],
+  "n_files": 86,
+  "code": 10904,
+  "doc": 16548,
+  "test_files": [
+   "tokio/tests/buffered.rs",
+   "tokio/tests/duplex_stream.rs",
+   "tokio/tests/io_async_fd.rs",
+   "tokio/tests/io_async_fd_memory_leak.rs",
+   "tokio/tests/io_async_read.rs",
+   "tokio/tests/io_buf_reader.rs",
+   "tokio/tests/io_buf_writer.rs",
+   "tokio/tests/io_chain.rs",
+   "tokio/tests/io_copy.rs",
+   "tokio/tests/io_copy_bidirectional.rs",
+   "tokio/tests/io_copy_buf.rs",
+   "tokio/tests/io_driver.rs",
+   "tokio/tests/io_driver_drop.rs",
+   "tokio/tests/io_emscripten.rs",
+   "tokio/tests/io_fill_buf.rs",
+   "tokio/tests/io_join.rs",
+   "tokio/tests/io_lines.rs",
+   "tokio/tests/io_mem_stream.rs",
+   "tokio/tests/io_panic.rs",
+   "tokio/tests/io_poll_aio.rs",
+   "tokio/tests/io_read.rs",
+   "tokio/tests/io_read_buf.rs",
+   "tokio/tests/io_read_exact.rs",
+   "tokio/tests/io_read_int.rs",
+   "tokio/tests/io_read_line.rs",
+   "tokio/tests/io_read_to_end.rs",
+   "tokio/tests/io_read_to_string.rs",
+   "tokio/tests/io_read_until.rs",
+   "tokio/tests/io_repeat.rs",
+   "tokio/tests/io_sink.rs",
+   "tokio/tests/io_split.rs",
+   "tokio/tests/io_take.rs",
+   "tokio/tests/io_util_empty.rs",
+   "tokio/tests/io_write.rs",
+   "tokio/tests/io_write_all.rs",
+   "tokio/tests/io_write_all_buf.rs",
+   "tokio/tests/io_write_buf.rs",
+   "tokio/tests/io_write_int.rs",
+   "tokio/tests/net_bind_resource.rs",
+   "tokio/tests/net_lookup_host.rs",
+   "tokio/tests/net_named_pipe.rs",
+   "tokio/tests/net_panic.rs",
+   "tokio/tests/net_quickack.rs",
+   "tokio/tests/net_unix_pipe.rs",
+   "tokio/tests/tcp_accept.rs",
+   "tokio/tests/tcp_accept_ready.rs",
+   "tokio/tests/tcp_connect.rs",
+   "tokio/tests/tcp_echo.rs",
+   "tokio/tests/tcp_into_split.rs",
+   "tokio/tests/tcp_into_std.rs",
+   "tokio/tests/tcp_peek.rs",
+   "tokio/tests/tcp_shutdown.rs",
+   "tokio/tests/tcp_socket.rs",
+   "tokio/tests/tcp_split.rs",
+   "tokio/tests/tcp_stream.rs",
+   "tokio/tests/udp.rs",
+   "tokio/tests/uds_cred.rs",
+   "tokio/tests/uds_datagram.rs",
+   "tokio/tests/uds_socket.rs",
+   "tokio/tests/uds_split.rs",
+   "tokio/tests/uds_stream.rs",
+   "tokio/tests/unix_shutdown.rs"
+  ],
+  "test_code": 8314,
+  "test_fns": 315,
+  "functions": 1149,
+  "kinds": {
+   "Trait method (declaration/default)": 84,
+   "Inside macro_rules!": 18,
+   "Trait impl": 373,
+   "Public API": 488,
+   "Crate-internal": 111,
+   "Private helper": 55,
+   "Test": 20
+  },
+  "async_fns": 94,
+  "unsafe_fns": 23,
+  "unsafe_mentions": 203
+ },
+ "sync": {
+  "files": [
+   {
+    "file": "tokio/src/sync/barrier.rs",
+    "code": 124,
+    "comment": 15,
+    "doc": 56,
+    "blank": 18
+   },
+   {
+    "file": "tokio/src/sync/batch_semaphore.rs",
+    "code": 543,
+    "comment": 48,
+    "doc": 95,
+    "blank": 94
+   },
+   {
+    "file": "tokio/src/sync/broadcast.rs",
+    "code": 619,
+    "comment": 102,
+    "doc": 898,
+    "blank": 178
+   },
+   {
+    "file": "tokio/src/sync/mod.rs",
+    "code": 53,
+    "comment": 0,
+    "doc": 450,
+    "blank": 21
+   },
+   {
+    "file": "tokio/src/sync/mpsc/block.rs",
+    "code": 229,
+    "comment": 58,
+    "doc": 115,
+    "blank": 70
+   },
+   {
+    "file": "tokio/src/sync/mpsc/bounded.rs",
+    "code": 413,
+    "comment": 22,
+    "doc": 1429,
+    "blank": 101
+   },
+   {
+    "file": "tokio/src/sync/mpsc/chan.rs",
+    "code": 431,
+    "comment": 60,
+    "doc": 23,
+    "blank": 117
+   },
+   {
+    "file": "tokio/src/sync/mpsc/error.rs",
+    "code": 116,
+    "comment": 4,
+    "doc": 20,
+    "blank": 28
+   },
+   {
+    "file": "tokio/src/sync/mpsc/list.rs",
+    "code": 238,
+    "comment": 97,
+    "doc": 46,
+    "blank": 76
+   },
+   {
+    "file": "tokio/src/sync/mpsc/mod.rs",
+    "code": 19,
+    "comment": 0,
+    "doc": 117,
+    "blank": 10
+   },
+   {
+    "file": "tokio/src/sync/mpsc/unbounded.rs",
+    "code": 186,
+    "comment": 2,
+    "doc": 491,
+    "blank": 47
+   },
+   {
+    "file": "tokio/src/sync/mutex.rs",
+    "code": 634,
+    "comment": 25,
+    "doc": 642,
+    "blank": 95
+   },
+   {
+    "file": "tokio/src/sync/notify.rs",
+    "code": 594,
+    "comment": 144,
+    "doc": 528,
+    "blank": 146
+   },
+   {
+    "file": "tokio/src/sync/once_cell.rs",
+    "code": 229,
+    "comment": 67,
+    "doc": 172,
+    "blank": 44
+   },
+   {
+    "file": "tokio/src/sync/oneshot.rs",
+    "code": 552,
+    "comment": 81,
+    "doc": 853,
+    "blank": 123
+   },
+   {
+    "file": "tokio/src/sync/rwlock.rs",
+    "code": 505,
+    "comment": 24,
+    "doc": 514,
+    "blank": 87
+   },
+   {
+    "file": "tokio/src/sync/rwlock/owned_read_guard.rs",
+    "code": 103,
+    "comment": 4,
+    "doc": 87,
+    "blank": 14
+   },
+   {
+    "file": "tokio/src/sync/rwlock/owned_write_guard.rs",
+    "code": 225,
+    "comment": 7,
+    "doc": 197,
+    "blank": 31
+   },
+   {
+    "file": "tokio/src/sync/rwlock/owned_write_guard_mapped.rs",
+    "code": 116,
+    "comment": 4,
+    "doc": 95,
+    "blank": 15
+   },
+   {
+    "file": "tokio/src/sync/rwlock/read_guard.rs",
+    "code": 98,
+    "comment": 4,
+    "doc": 76,
+    "blank": 13
+   },
+   {
+    "file": "tokio/src/sync/rwlock/write_guard.rs",
+    "code": 217,
+    "comment": 7,
+    "doc": 203,
+    "blank": 30
+   },
+   {
+    "file": "tokio/src/sync/rwlock/write_guard_mapped.rs",
+    "code": 110,
+    "comment": 6,
+    "doc": 82,
+    "blank": 15
+   },
+   {
+    "file": "tokio/src/sync/semaphore.rs",
+    "code": 313,
+    "comment": 1,
+    "doc": 1045,
+    "blank": 52
+   },
+   {
+    "file": "tokio/src/sync/set_once.rs",
+    "code": 151,
+    "comment": 42,
+    "doc": 159,
+    "blank": 36
+   },
+   {
+    "file": "tokio/src/sync/task/atomic_waker.rs",
+    "code": 146,
+    "comment": 163,
+    "doc": 39,
+    "blank": 35
+   },
+   {
+    "file": "tokio/src/sync/task/mod.rs",
+    "code": 2,
+    "comment": 0,
+    "doc": 1,
+    "blank": 1
+   },
+   {
+    "file": "tokio/src/sync/tests/atomic_waker.rs",
+    "code": 85,
+    "comment": 1,
+    "doc": 0,
+    "blank": 27
+   },
+   {
+    "file": "tokio/src/sync/tests/loom_atomic_waker.rs",
+    "code": 67,
+    "comment": 12,
+    "doc": 0,
+    "blank": 21
+   },
+   {
+    "file": "tokio/src/sync/tests/loom_broadcast.rs",
+    "code": 168,
+    "comment": 2,
+    "doc": 0,
+    "blank": 37
+   },
+   {
+    "file": "tokio/src/sync/tests/loom_list.rs",
+    "code": 39,
+    "comment": 0,
+    "doc": 0,
+    "blank": 9
+   },
+   {
+    "file": "tokio/src/sync/tests/loom_mpsc.rs",
+    "code": 221,
+    "comment": 0,
+    "doc": 0,
+    "blank": 56
+   },
+   {
+    "file": "tokio/src/sync/tests/loom_notify.rs",
+    "code": 224,
+    "comment": 23,
+    "doc": 18,
+    "blank": 65
+   },
+   {
+    "file": "tokio/src/sync/tests/loom_oneshot.rs",
+    "code": 155,
+    "comment": 18,
+    "doc": 0,
+    "blank": 40
+   },
+   {
+    "file": "tokio/src/sync/tests/loom_rwlock.rs",
+    "code": 83,
+    "comment": 4,
+    "doc": 0,
+    "blank": 18
+   },
+   {
+    "file": "tokio/src/sync/tests/loom_semaphore_batch.rs",
+    "code": 196,
+    "comment": 3,
+    "doc": 0,
+    "blank": 43
+   },
+   {
+    "file": "tokio/src/sync/tests/loom_set_once.rs",
+    "code": 56,
+    "comment": 0,
+    "doc": 0,
+    "blank": 16
+   },
+   {
+    "file": "tokio/src/sync/tests/loom_watch.rs",
+    "code": 81,
+    "comment": 4,
+    "doc": 0,
+    "blank": 25
+   },
+   {
+    "file": "tokio/src/sync/tests/mod.rs",
+    "code": 17,
+    "comment": 0,
+    "doc": 0,
+    "blank": 1
+   },
+   {
+    "file": "tokio/src/sync/tests/notify.rs",
+    "code": 90,
+    "comment": 3,
+    "doc": 0,
+    "blank": 28
+   },
+   {
+    "file": "tokio/src/sync/tests/semaphore_batch.rs",
+    "code": 218,
+    "comment": 12,
+    "doc": 0,
+    "blank": 80
+   },
+   {
+    "file": "tokio/src/sync/watch.rs",
+    "code": 469,
+    "comment": 65,
+    "doc": 903,
+    "blank": 137
+   }
+  ],
+  "n_files": 41,
+  "code": 9135,
+  "doc": 10488,
+  "test_files": [
+   "tokio/tests/sync_barrier.rs",
+   "tokio/tests/sync_broadcast.rs",
+   "tokio/tests/sync_broadcast_weak.rs",
+   "tokio/tests/sync_emscripten_blocking.rs",
+   "tokio/tests/sync_errors.rs",
+   "tokio/tests/sync_mpsc.rs",
+   "tokio/tests/sync_mpsc_weak.rs",
+   "tokio/tests/sync_mutex.rs",
+   "tokio/tests/sync_mutex_owned.rs",
+   "tokio/tests/sync_notify.rs",
+   "tokio/tests/sync_notify_owned.rs",
+   "tokio/tests/sync_once_cell.rs",
+   "tokio/tests/sync_oneshot.rs",
+   "tokio/tests/sync_panic.rs",
+   "tokio/tests/sync_rwlock.rs",
+   "tokio/tests/sync_semaphore.rs",
+   "tokio/tests/sync_semaphore_owned.rs",
+   "tokio/tests/sync_set_once.rs",
+   "tokio/tests/sync_watch.rs"
+  ],
+  "test_code": 5413,
+  "test_fns": 361,
+  "functions": 755,
+  "kinds": {
+   "Public API": 249,
+   "Private helper": 123,
+   "Crate-internal": 87,
+   "Trait impl": 182,
+   "Test": 107,
+   "Trait method (declaration/default)": 7
+  },
+  "async_fns": 39,
+  "unsafe_fns": 34,
+  "unsafe_mentions": 230
+ },
+ "fs_process_signal": {
+  "files": [
+   {
+    "file": "tokio/src/fs/canonicalize.rs",
+    "code": 7,
+    "comment": 0,
+    "doc": 40,
+    "blank": 2
+   },
+   {
+    "file": "tokio/src/fs/copy.rs",
+    "code": 7,
+    "comment": 0,
+    "doc": 16,
+    "blank": 1
+   },
+   {
+    "file": "tokio/src/fs/create_dir.rs",
+    "code": 7,
+    "comment": 0,
+    "doc": 41,
+    "blank": 2
+   },
+   {
+    "file": "tokio/src/fs/create_dir_all.rs",
+    "code": 7,
+    "comment": 0,
+    "doc": 45,
+    "blank": 2
+   },
+   {
+    "file": "tokio/src/fs/dir_builder.rs",
+    "code": 39,
+    "comment": 0,
+    "doc": 80,
+    "blank": 10
+   },
+   {
+    "file": "tokio/src/fs/file.rs",
+    "code": 634,
+    "comment": 39,
+    "doc": 398,
+    "blank": 104
+   },
+   {
+    "file": "tokio/src/fs/file/tests.rs",
+    "code": 765,
+    "comment": 5,
+    "doc": 0,
+    "blank": 208
+   },
+   {
+    "file": "tokio/src/fs/hard_link.rs",
+    "code": 8,
+    "comment": 0,
+    "doc": 33,
+    "blank": 3
+   },
+   {
+    "file": "tokio/src/fs/metadata.rs",
+    "code": 8,
+    "comment": 0,
+    "doc": 36,
+    "blank": 2
+   },
+   {
+    "file": "tokio/src/fs/mocks.rs",
+    "code": 146,
+    "comment": 17,
+    "doc": 1,
+    "blank": 25
+   },
+   {
+    "file": "tokio/src/fs/mod.rs",
+    "code": 76,
+    "comment": 0,
+    "doc": 221,
+    "blank": 32
+   },
+   {
+    "file": "tokio/src/fs/open_options.rs",
+    "code": 279,
+    "comment": 4,
+    "doc": 546,
+    "blank": 31
+   },
+   {
+    "file": "tokio/src/fs/open_options/mock_open_options.rs",
+    "code": 36,
+    "comment": 0,
+    "doc": 1,
+    "blank": 2
+   },
+   {
+    "file": "tokio/src/fs/open_options/uring_open_options.rs",
+    "code": 108,
+    "comment": 2,
+    "doc": 0,
+    "blank": 18
+   },
+   {
+    "file": "tokio/src/fs/read.rs",
+    "code": 30,
+    "comment": 9,
+    "doc": 51,
+    "blank": 6
+   },
+   {
+    "file": "tokio/src/fs/read_dir.rs",
+    "code": 146,
+    "comment": 0,
+    "doc": 184,
+    "blank": 27
+   },
+   {
+    "file": "tokio/src/fs/read_link.rs",
+    "code": 7,
+    "comment": 0,
+    "doc": 3,
+    "blank": 2
+   },
+   {
+    "file": "tokio/src/fs/read_to_string.rs",
+    "code": 6,
+    "comment": 0,
+    "doc": 22,
+    "blank": 2
+   },
+   {
+    "file": "tokio/src/fs/read_uring.rs",
+    "code": 91,
+    "comment": 31,
+    "doc": 0,
+    "blank": 29
+   },
+   {
+    "file": "tokio/src/fs/remove_dir.rs",
+    "code": 7,
+    "comment": 0,
+    "doc": 3,
+    "blank": 2
+   },
+   {
+    "file": "tokio/src/fs/remove_dir_all.rs",
+    "code": 7,
+    "comment": 0,
+    "doc": 5,
+    "blank": 2
+   },
+   {
+    "file": "tokio/src/fs/remove_file.rs",
+    "code": 7,
+    "comment": 0,
+    "doc": 7,
+    "blank": 2
+   },
+   {
+    "file": "tokio/src/fs/rename.rs",
+    "code": 34,
+    "comment": 0,
+    "doc": 6,
+    "blank": 7
+   },
+   {
+    "file": "tokio/src/fs/set_permissions.rs",
+    "code": 8,
+    "comment": 0,
+    "doc": 5,
+    "blank": 2
+   },
+   {
+    "file": "tokio/src/fs/symlink.rs",
+    "code": 8,
+    "comment": 0,
+    "doc": 5,
+    "blank": 3
+   },
+   {
+    "file": "tokio/src/fs/symlink_dir.rs",
+    "code": 8,
+    "comment": 0,
+    "doc": 8,
+    "blank": 3
+   },
+   {
+    "file": "tokio/src/fs/symlink_file.rs",
+    "code": 8,
+    "comment": 0,
+    "doc": 8,
+    "blank": 3
+   },
+   {
+    "file": "tokio/src/fs/symlink_metadata.rs",
+    "code": 8,
+    "comment": 0,
+    "doc": 5,
+    "blank": 2
+   },
+   {
+    "file": "tokio/src/fs/try_exists.rs",
+    "code": 44,
+    "comment": 21,
+    "doc": 19,
+    "blank": 7
+   },
+   {
+    "file": "tokio/src/fs/write.rs",
+    "code": 68,
+    "comment": 0,
+    "doc": 21,
+    "blank": 12
+   },
+   {
+    "file": "tokio/src/process/kill.rs",
+    "code": 9,
+    "comment": 0,
+    "doc": 2,
+    "blank": 2
+   },
+   {
+    "file": "tokio/src/process/mod.rs",
+    "code": 627,
+    "comment": 11,
+    "doc": 1080,
+    "blank": 136
+   },
+   {
+    "file": "tokio/src/process/unix/mod.rs",
+    "code": 283,
+    "comment": 8,
+    "doc": 22,
+    "blank": 61
+   },
+   {
+    "file": "tokio/src/process/unix/orphan.rs",
+    "code": 258,
+    "comment": 14,
+    "doc": 8,
+    "blank": 54
+   },
+   {
+    "file": "tokio/src/process/unix/pidfd_reaper.rs",
+    "code": 258,
+    "comment": 4,
+    "doc": 0,
+    "blank": 50
+   },
+   {
+    "file": "tokio/src/process/unix/reap.rs",
+    "code": 228,
+    "comment": 26,
+    "doc": 2,
+    "blank": 42
+   },
+   {
+    "file": "tokio/src/process/windows.rs",
+    "code": 225,
+    "comment": 5,
+    "doc": 16,
+    "blank": 39
+   },
+   {
+    "file": "tokio/src/signal/ctrl_c.rs",
+    "code": 9,
+    "comment": 0,
+    "doc": 51,
+    "blank": 2
+   },
+   {
+    "file": "tokio/src/signal/mod.rs",
+    "code": 36,
+    "comment": 0,
+    "doc": 44,
+    "blank": 9
+   },
+   {
+    "file": "tokio/src/signal/registry.rs",
+    "code": 185,
+    "comment": 8,
+    "doc": 21,
+    "blank": 49
+   },
+   {
+    "file": "tokio/src/signal/reusable_box.rs",
+    "code": 149,
+    "comment": 19,
+    "doc": 23,
+    "blank": 39
+   },
+   {
+    "file": "tokio/src/signal/unix.rs",
+    "code": 235,
+    "comment": 15,
+    "doc": 241,
+    "blank": 55
+   },
+   {
+    "file": "tokio/src/signal/windows.rs",
+    "code": 106,
+    "comment": 1,
+    "doc": 407,
+    "blank": 24
+   },
+   {
+    "file": "tokio/src/signal/windows/stub.rs",
+    "code": 17,
+    "comment": 0,
+    "doc": 2,
+    "blank": 6
+   },
+   {
+    "file": "tokio/src/signal/windows/sys.rs",
+    "code": 169,
+    "comment": 40,
+    "doc": 2,
+    "blank": 46
+   }
+  ],
+  "n_files": 45,
+  "code": 5408,
+  "doc": 4010,
+  "test_files": [
+   "tokio/tests/fs.rs",
+   "tokio/tests/fs_canonicalize_dir.rs",
+   "tokio/tests/fs_copy.rs",
+   "tokio/tests/fs_dir.rs",
+   "tokio/tests/fs_file.rs",
+   "tokio/tests/fs_file_join_error.rs",
+   "tokio/tests/fs_link.rs",
+   "tokio/tests/fs_open_options.rs",
+   "tokio/tests/fs_open_options_windows.rs",
+   "tokio/tests/fs_remove_dir_all.rs",
+   "tokio/tests/fs_remove_file.rs",
+   "tokio/tests/fs_rename.rs",
+   "tokio/tests/fs_symlink_dir_windows.rs",
+   "tokio/tests/fs_symlink_file_windows.rs",
+   "tokio/tests/fs_try_exists.rs",
+   "tokio/tests/fs_uring.rs",
+   "tokio/tests/fs_uring_cancel_open.rs",
+   "tokio/tests/fs_uring_completed_then_dropped_before_repoll.rs",
+   "tokio/tests/fs_uring_file_read.rs",
+   "tokio/tests/fs_uring_no_io.rs",
+   "tokio/tests/fs_uring_read.rs",
+   "tokio/tests/fs_uring_rename.rs",
+   "tokio/tests/fs_uring_runtime_shutdown.rs",
+   "tokio/tests/fs_uring_statx.rs",
+   "tokio/tests/fs_uring_statx_fd_leak_test.rs",
+   "tokio/tests/fs_write.rs",
+   "tokio/tests/process_arg0.rs",
+   "tokio/tests/process_change_of_runtime.rs",
+   "tokio/tests/process_issue_2174.rs",
+   "tokio/tests/process_issue_42.rs",
+   "tokio/tests/process_issue_7144.rs",
+   "tokio/tests/process_kill_after_wait.rs",
+   "tokio/tests/process_kill_on_drop.rs",
+   "tokio/tests/process_raw_handle.rs",
+   "tokio/tests/process_smoke.rs",
+   "tokio/tests/signal_ctrl_c.rs",
+   "tokio/tests/signal_drop_recv.rs",
+   "tokio/tests/signal_drop_rt.rs",
+   "tokio/tests/signal_drop_signal.rs",
+   "tokio/tests/signal_info.rs",
+   "tokio/tests/signal_multi_rt.rs",
+   "tokio/tests/signal_no_rt.rs",
+   "tokio/tests/signal_notify_both.rs",
+   "tokio/tests/signal_panic.rs",
+   "tokio/tests/signal_realtime.rs",
+   "tokio/tests/signal_twice.rs",
+   "tokio/tests/signal_usr1.rs"
+  ],
+  "test_code": 2959,
+  "test_fns": 136,
+  "functions": 492,
+  "kinds": {
+   "Public API": 153,
+   "Trait impl": 128,
+   "Private helper": 48,
+   "Crate-internal": 62,
+   "Test": 85,
+   "Trait method (declaration/default)": 7,
+   "Inside macro_rules!": 9
+  },
+  "async_fns": 66,
+  "unsafe_fns": 9,
+  "unsafe_mentions": 54
+ },
+ "scheduler": {
+  "files": [
+   {
+    "file": "tokio/src/runtime/builder.rs",
+    "code": 586,
+    "comment": 28,
+    "doc": 1512,
+    "blank": 144
+   },
+   {
+    "file": "tokio/src/runtime/config.rs",
+    "code": 30,
+    "comment": 0,
+    "doc": 24,
+    "blank": 15
+   },
+   {
+    "file": "tokio/src/runtime/context.rs",
+    "code": 163,
+    "comment": 10,
+    "doc": 13,
+    "blank": 40
+   },
+   {
+    "file": "tokio/src/runtime/context/blocking.rs",
+    "code": 94,
+    "comment": 5,
+    "doc": 8,
+    "blank": 18
+   },
+   {
+    "file": "tokio/src/runtime/context/current.rs",
+    "code": 71,
+    "comment": 4,
+    "doc": 5,
+    "blank": 17
+   },
+   {
+    "file": "tokio/src/runtime/context/runtime.rs",
+    "code": 73,
+    "comment": 5,
+    "doc": 6,
+    "blank": 16
+   },
+   {
+    "file": "tokio/src/runtime/context/runtime_mt.rs",
+    "code": 26,
+    "comment": 2,
+    "doc": 3,
+    "blank": 5
+   },
+   {
+    "file": "tokio/src/runtime/context/scoped.rs",
+    "code": 44,
+    "comment": 0,
+    "doc": 3,
+    "blank": 9
+   },
+   {
+    "file": "tokio/src/runtime/driver.rs",
+    "code": 299,
+    "comment": 6,
+    "doc": 9,
+    "blank": 69
+   },
+   {
+    "file": "tokio/src/runtime/driver/op.rs",
+    "code": 158,
+    "comment": 36,
+    "doc": 12,
+    "blank": 34
+   },
+   {
+    "file": "tokio/src/runtime/dump.rs",
+    "code": 169,
+    "comment": 1,
+    "doc": 138,
+    "blank": 33
+   },
+   {
+    "file": "tokio/src/runtime/handle.rs",
+    "code": 254,
+    "comment": 6,
+    "doc": 454,
+    "blank": 33
+   },
+   {
+    "file": "tokio/src/runtime/id.rs",
+    "code": 14,
+    "comment": 0,
+    "doc": 25,
+    "blank": 3
+   },
+   {
+    "file": "tokio/src/runtime/jspi.rs",
+    "code": 95,
+    "comment": 30,
+    "doc": 31,
+    "blank": 20
+   },
+   {
+    "file": "tokio/src/runtime/local_runtime/mod.rs",
+    "code": 5,
+    "comment": 0,
+    "doc": 0,
+    "blank": 2
+   },
+   {
+    "file": "tokio/src/runtime/local_runtime/options.rs",
+    "code": 6,
+    "comment": 0,
+    "doc": 11,
+    "blank": 1
+   },
+   {
+    "file": "tokio/src/runtime/local_runtime/runtime.rs",
+    "code": 131,
+    "comment": 4,
+    "doc": 245,
+    "blank": 26
+   },
+   {
+    "file": "tokio/src/runtime/metrics/batch.rs",
+    "code": 323,
+    "comment": 1,
+    "doc": 35,
+    "blank": 42
+   },
+   {
+    "file": "tokio/src/runtime/metrics/histogram.rs",
+    "code": 494,
+    "comment": 0,
+    "doc": 21,
+    "blank": 114
+   },
+   {
+    "file": "tokio/src/runtime/metrics/histogram/h2_histogram.rs",
+    "code": 361,
+    "comment": 22,
+    "doc": 95,
+    "blank": 48
+   },
+   {
+    "file": "tokio/src/runtime/metrics/io.rs",
+    "code": 20,
+    "comment": 0,
+    "doc": 0,
+    "blank": 5
+   },
+   {
+    "file": "tokio/src/runtime/metrics/mock.rs",
+    "code": 9,
+    "comment": 0,
+    "doc": 2,
+    "blank": 4
+   },
+   {
+    "file": "tokio/src/runtime/metrics/mod.rs",
+    "code": 31,
+    "comment": 0,
+    "doc": 8,
+    "blank": 11
+   },
+   {
+    "file": "tokio/src/runtime/metrics/runtime.rs",
+    "code": 285,
+    "comment": 2,
+    "doc": 972,
+    "blank": 44
+   },
+   {
+    "file": "tokio/src/runtime/metrics/schedule_latency.rs",
+    "code": 35,
+    "comment": 0,
+    "doc": 21,
+    "blank": 5
+   },
+   {
+    "file": "tokio/src/runtime/metrics/schedule_latency_mock.rs",
+    "code": 14,
+    "comment": 0,
+    "doc": 3,
+    "blank": 5
+   },
+   {
+    "file": "tokio/src/runtime/metrics/scheduler.rs",
+    "code": 21,
+    "comment": 0,
+    "doc": 10,
+    "blank": 4
+   },
+   {
+    "file": "tokio/src/runtime/metrics/worker.rs",
+    "code": 78,
+    "comment": 0,
+    "doc": 22,
+    "blank": 22
+   },
+   {
+    "file": "tokio/src/runtime/mod.rs",
+    "code": 177,
+    "comment": 13,
+    "doc": 459,
+    "blank": 44
+   },
+   {
+    "file": "tokio/src/runtime/park.rs",
+    "code": 298,
+    "comment": 60,
+    "doc": 24,
+    "blank": 68
+   },
+   {
+    "file": "tokio/src/runtime/runtime.rs",
+    "code": 178,
+    "comment": 5,
+    "doc": 380,
+    "blank": 30
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/block_in_place.rs",
+    "code": 8,
+    "comment": 0,
+    "doc": 0,
+    "blank": 1
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/current_thread/mod.rs",
+    "code": 623,
+    "comment": 67,
+    "doc": 64,
+    "blank": 171
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/defer.rs",
+    "code": 34,
+    "comment": 1,
+    "doc": 0,
+    "blank": 8
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/inject.rs",
+    "code": 46,
+    "comment": 3,
+    "doc": 8,
+    "blank": 14
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/inject/metrics.rs",
+    "code": 6,
+    "comment": 0,
+    "doc": 0,
+    "blank": 1
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/inject/pop.rs",
+    "code": 42,
+    "comment": 1,
+    "doc": 0,
+    "blank": 12
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/inject/rt_multi_thread.rs",
+    "code": 124,
+    "comment": 23,
+    "doc": 33,
+    "blank": 32
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/inject/shared.rs",
+    "code": 68,
+    "comment": 8,
+    "doc": 21,
+    "blank": 24
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/inject/synced.rs",
+    "code": 23,
+    "comment": 1,
+    "doc": 3,
+    "blank": 10
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/mod.rs",
+    "code": 252,
+    "comment": 3,
+    "doc": 11,
+    "blank": 54
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/multi_thread/counters.rs",
+    "code": 51,
+    "comment": 0,
+    "doc": 0,
+    "blank": 11
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/multi_thread/handle.rs",
+    "code": 105,
+    "comment": 0,
+    "doc": 10,
+    "blank": 26
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/multi_thread/handle/metrics.rs",
+    "code": 41,
+    "comment": 0,
+    "doc": 0,
+    "blank": 11
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/multi_thread/handle/taskdump.rs",
+    "code": 18,
+    "comment": 2,
+    "doc": 0,
+    "blank": 6
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/multi_thread/idle.rs",
+    "code": 147,
+    "comment": 27,
+    "doc": 27,
+    "blank": 47
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/multi_thread/mod.rs",
+    "code": 79,
+    "comment": 1,
+    "doc": 6,
+    "blank": 20
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/multi_thread/overflow.rs",
+    "code": 21,
+    "comment": 0,
+    "doc": 0,
+    "blank": 5
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/multi_thread/park.rs",
+    "code": 212,
+    "comment": 42,
+    "doc": 23,
+    "blank": 39
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/multi_thread/queue.rs",
+    "code": 327,
+    "comment": 118,
+    "doc": 58,
+    "blank": 99
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/multi_thread/stats.rs",
+    "code": 87,
+    "comment": 11,
+    "doc": 18,
+    "blank": 33
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/multi_thread/trace.rs",
+    "code": 53,
+    "comment": 0,
+    "doc": 1,
+    "blank": 7
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/multi_thread/trace_mock.rs",
+    "code": 9,
+    "comment": 0,
+    "doc": 0,
+    "blank": 2
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/multi_thread/worker.rs",
+    "code": 939,
+    "comment": 198,
+    "doc": 189,
+    "blank": 240
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/multi_thread/worker/metrics.rs",
+    "code": 13,
+    "comment": 0,
+    "doc": 0,
+    "blank": 2
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/multi_thread/worker/taskdump.rs",
+    "code": 52,
+    "comment": 6,
+    "doc": 1,
+    "blank": 17
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/multi_thread/worker/taskdump_mock.rs",
+    "code": 6,
+    "comment": 0,
+    "doc": 0,
+    "blank": 1
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/util/mod.rs",
+    "code": 2,
+    "comment": 0,
+    "doc": 0,
+    "blank": 0
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/util/time_alt.rs",
+    "code": 147,
+    "comment": 10,
+    "doc": 0,
+    "blank": 22
+   },
+   {
+    "file": "tokio/src/runtime/task_hooks.rs",
+    "code": 71,
+    "comment": 0,
+    "doc": 33,
+    "blank": 10
+   },
+   {
+    "file": "tokio/src/runtime/tests/inject.rs",
+    "code": 32,
+    "comment": 0,
+    "doc": 0,
+    "blank": 12
+   },
+   {
+    "file": "tokio/src/runtime/tests/loom_blocking.rs",
+    "code": 157,
+    "comment": 28,
+    "doc": 8,
+    "blank": 37
+   },
+   {
+    "file": "tokio/src/runtime/tests/loom_current_thread.rs",
+    "code": 140,
+    "comment": 30,
+    "doc": 0,
+    "blank": 28
+   },
+   {
+    "file": "tokio/src/runtime/tests/loom_current_thread/yield_now.rs",
+    "code": 23,
+    "comment": 1,
+    "doc": 0,
+    "blank": 6
+   },
+   {
+    "file": "tokio/src/runtime/tests/loom_join_set.rs",
+    "code": 68,
+    "comment": 2,
+    "doc": 0,
+    "blank": 12
+   },
+   {
+    "file": "tokio/src/runtime/tests/loom_local.rs",
+    "code": 30,
+    "comment": 0,
+    "doc": 8,
+    "blank": 9
+   },
+   {
+    "file": "tokio/src/runtime/tests/loom_multi_thread.rs",
+    "code": 355,
+    "comment": 17,
+    "doc": 7,
+    "blank": 82
+   },
+   {
+    "file": "tokio/src/runtime/tests/loom_multi_thread/queue.rs",
+    "code": 147,
+    "comment": 6,
+    "doc": 0,
+    "blank": 52
+   },
+   {
+    "file": "tokio/src/runtime/tests/loom_multi_thread/shutdown.rs",
+    "code": 21,
+    "comment": 0,
+    "doc": 0,
+    "blank": 7
+   },
+   {
+    "file": "tokio/src/runtime/tests/loom_multi_thread/yield_now.rs",
+    "code": 29,
+    "comment": 1,
+    "doc": 0,
+    "blank": 7
+   },
+   {
+    "file": "tokio/src/runtime/tests/loom_oneshot.rs",
+    "code": 39,
+    "comment": 0,
+    "doc": 0,
+    "blank": 9
+   },
+   {
+    "file": "tokio/src/runtime/tests/mod.rs",
+    "code": 67,
+    "comment": 3,
+    "doc": 1,
+    "blank": 14
+   },
+   {
+    "file": "tokio/src/runtime/tests/queue.rs",
+    "code": 208,
+    "comment": 2,
+    "doc": 0,
+    "blank": 69
+   },
+   {
+    "file": "tokio/src/runtime/tests/task.rs",
+    "code": 403,
+    "comment": 4,
+    "doc": 0,
+    "blank": 62
+   },
+   {
+    "file": "tokio/src/runtime/tests/task_combinations.rs",
+    "code": 404,
+    "comment": 42,
+    "doc": 0,
+    "blank": 42
+   },
+   {
+    "file": "tokio/src/runtime/thread_id.rs",
+    "code": 30,
+    "comment": 0,
+    "doc": 0,
+    "blank": 7
+   }
+  ],
+  "n_files": 76,
+  "code": 10301,
+  "doc": 5979,
+  "test_files": [
+   "tokio/tests/rt_basic.rs",
+   "tokio/tests/rt_blocking_thread_exhaust.rs",
+   "tokio/tests/rt_busy_tick.rs",
+   "tokio/tests/rt_common.rs",
+   "tokio/tests/rt_common_before_park.rs",
+   "tokio/tests/rt_emscripten_block_on.rs",
+   "tokio/tests/rt_emscripten_jspi.rs",
+   "tokio/tests/rt_handle.rs",
+   "tokio/tests/rt_handle_block_on.rs",
+   "tokio/tests/rt_local.rs",
+   "tokio/tests/rt_metrics.rs",
+   "tokio/tests/rt_multi_thread_emscripten.rs",
+   "tokio/tests/rt_panic.rs",
+   "tokio/tests/rt_poll_callbacks.rs",
+   "tokio/tests/rt_shutdown_err.rs",
+   "tokio/tests/rt_spawn_blocking.rs",
+   "tokio/tests/rt_threaded.rs",
+   "tokio/tests/rt_time_start_paused.rs",
+   "tokio/tests/rt_unstable_eager_driver_handoff.rs",
+   "tokio/tests/rt_unstable_metrics.rs",
+   "tokio/tests/rt_worker_index.rs"
+  ],
+  "test_code": 4852,
+  "test_fns": 230,
+  "functions": 832,
+  "kinds": {
+   "Private helper": 145,
+   "Public API": 145,
+   "Crate-internal": 335,
+   "Trait impl": 60,
+   "Test": 142,
+   "Trait method (declaration/default)": 5
+  },
+  "async_fns": 8,
+  "unsafe_fns": 18,
+  "unsafe_mentions": 104
+ },
+ "timer_driver": {
+  "files": [
+   {
+    "file": "tokio/src/runtime/time/entry.rs",
+    "code": 287,
+    "comment": 59,
+    "doc": 187,
+    "blank": 70
+   },
+   {
+    "file": "tokio/src/runtime/time/handle.rs",
+    "code": 39,
+    "comment": 0,
+    "doc": 23,
+    "blank": 6
+   },
+   {
+    "file": "tokio/src/runtime/time/mod.rs",
+    "code": 276,
+    "comment": 56,
+    "doc": 83,
+    "blank": 77
+   },
+   {
+    "file": "tokio/src/runtime/time/source.rs",
+    "code": 35,
+    "comment": 2,
+    "doc": 1,
+    "blank": 7
+   },
+   {
+    "file": "tokio/src/runtime/time/tests/mod.rs",
+    "code": 215,
+    "comment": 4,
+    "doc": 0,
+    "blank": 63
+   },
+   {
+    "file": "tokio/src/runtime/time/wheel/level.rs",
+    "code": 192,
+    "comment": 45,
+    "doc": 19,
+    "blank": 58
+   },
+   {
+    "file": "tokio/src/runtime/time/wheel/mod.rs",
+    "code": 287,
+    "comment": 51,
+    "doc": 60,
+    "blank": 108
+   },
+   {
+    "file": "tokio/src/runtime/time_alt/cancellation_queue.rs",
+    "code": 65,
+    "comment": 1,
+    "doc": 10,
+    "blank": 14
+   },
+   {
+    "file": "tokio/src/runtime/time_alt/cancellation_queue/tests.rs",
+    "code": 77,
+    "comment": 0,
+    "doc": 0,
+    "blank": 18
+   },
+   {
+    "file": "tokio/src/runtime/time_alt/context.rs",
+    "code": 36,
+    "comment": 0,
+    "doc": 4,
+    "blank": 5
+   },
+   {
+    "file": "tokio/src/runtime/time_alt/entry.rs",
+    "code": 183,
+    "comment": 12,
+    "doc": 45,
+    "blank": 41
+   },
+   {
+    "file": "tokio/src/runtime/time_alt/mod.rs",
+    "code": 16,
+    "comment": 0,
+    "doc": 0,
+    "blank": 7
+   },
+   {
+    "file": "tokio/src/runtime/time_alt/registration_queue.rs",
+    "code": 28,
+    "comment": 1,
+    "doc": 6,
+    "blank": 6
+   },
+   {
+    "file": "tokio/src/runtime/time_alt/registration_queue/tests.rs",
+    "code": 41,
+    "comment": 0,
+    "doc": 0,
+    "blank": 10
+   },
+   {
+    "file": "tokio/src/runtime/time_alt/tests.rs",
+    "code": 192,
+    "comment": 33,
+    "doc": 0,
+    "blank": 44
+   },
+   {
+    "file": "tokio/src/runtime/time_alt/timer.rs",
+    "code": 90,
+    "comment": 11,
+    "doc": 1,
+    "blank": 18
+   },
+   {
+    "file": "tokio/src/runtime/time_alt/wake_queue.rs",
+    "code": 33,
+    "comment": 1,
+    "doc": 7,
+    "blank": 7
+   },
+   {
+    "file": "tokio/src/runtime/time_alt/wake_queue/tests.rs",
+    "code": 55,
+    "comment": 1,
+    "doc": 0,
+    "blank": 14
+   },
+   {
+    "file": "tokio/src/runtime/time_alt/wheel/level.rs",
+    "code": 194,
+    "comment": 46,
+    "doc": 19,
+    "blank": 58
+   },
+   {
+    "file": "tokio/src/runtime/time_alt/wheel/mod.rs",
+    "code": 260,
+    "comment": 44,
+    "doc": 51,
+    "blank": 96
+   }
+  ],
+  "n_files": 20,
+  "code": 2601,
+  "doc": 883,
+  "test_files": [],
+  "test_code": 0,
+  "test_fns": 0,
+  "functions": 239,
+  "kinds": {
+   "Trait impl": 28,
+   "Private helper": 41,
+   "Crate-internal": 94,
+   "Test": 76
+  },
+  "async_fns": 0,
+  "unsafe_fns": 36,
+  "unsafe_mentions": 124
+ },
+ "io_driver": {
+  "files": [
+   {
+    "file": "tokio/src/runtime/io/driver.rs",
+    "code": 274,
+    "comment": 25,
+    "doc": 27,
+    "blank": 61
+   },
+   {
+    "file": "tokio/src/runtime/io/driver/signal.rs",
+    "code": 19,
+    "comment": 0,
+    "doc": 0,
+    "blank": 3
+   },
+   {
+    "file": "tokio/src/runtime/io/driver/uring.rs",
+    "code": 207,
+    "comment": 37,
+    "doc": 36,
+    "blank": 49
+   },
+   {
+    "file": "tokio/src/runtime/io/metrics.rs",
+    "code": 16,
+    "comment": 0,
+    "doc": 5,
+    "blank": 3
+   },
+   {
+    "file": "tokio/src/runtime/io/mod.rs",
+    "code": 17,
+    "comment": 0,
+    "doc": 0,
+    "blank": 5
+   },
+   {
+    "file": "tokio/src/runtime/io/registration.rs",
+    "code": 146,
+    "comment": 18,
+    "doc": 71,
+    "blank": 32
+   },
+   {
+    "file": "tokio/src/runtime/io/registration_set.rs",
+    "code": 90,
+    "comment": 25,
+    "doc": 1,
+    "blank": 32
+   },
+   {
+    "file": "tokio/src/runtime/io/scheduled_io.rs",
+    "code": 368,
+    "comment": 119,
+    "doc": 40,
+    "blank": 88
+   },
+   {
+    "file": "tokio/src/runtime/process.rs",
+    "code": 30,
+    "comment": 1,
+    "doc": 3,
+    "blank": 10
+   },
+   {
+    "file": "tokio/src/runtime/signal/mod.rs",
+    "code": 74,
+    "comment": 27,
+    "doc": 16,
+    "blank": 23
+   }
+  ],
+  "n_files": 10,
+  "code": 1241,
+  "doc": 451,
+  "test_files": [],
+  "test_code": 0,
+  "test_fns": 0,
+  "functions": 95,
+  "kinds": {
+   "Crate-internal": 66,
+   "Private helper": 13,
+   "Trait impl": 14,
+   "Test": 2
+  },
+  "async_fns": 4,
+  "unsafe_fns": 7,
+  "unsafe_mentions": 40
+ },
+ "blocking_pool": {
+  "files": [
+   {
+    "file": "tokio/src/blocking.rs",
+    "code": 75,
+    "comment": 10,
+    "doc": 0,
+    "blank": 14
+   },
+   {
+    "file": "tokio/src/runtime/blocking/mod.rs",
+    "code": 21,
+    "comment": 0,
+    "doc": 4,
+    "blank": 7
+   },
+   {
+    "file": "tokio/src/runtime/blocking/pool.rs",
+    "code": 560,
+    "comment": 61,
+    "doc": 47,
+    "blank": 110
+   },
+   {
+    "file": "tokio/src/runtime/blocking/schedule.rs",
+    "code": 55,
+    "comment": 0,
+    "doc": 6,
+    "blank": 5
+   },
+   {
+    "file": "tokio/src/runtime/blocking/sharded.rs",
+    "code": 208,
+    "comment": 44,
+    "doc": 58,
+    "blank": 43
+   },
+   {
+    "file": "tokio/src/runtime/blocking/shutdown.rs",
+    "code": 44,
+    "comment": 6,
+    "doc": 11,
+    "blank": 10
+   },
+   {
+    "file": "tokio/src/runtime/blocking/task.rs",
+    "code": 28,
+    "comment": 7,
+    "doc": 2,
+    "blank": 7
+   }
+  ],
+  "n_files": 7,
+  "code": 991,
+  "doc": 256,
+  "test_files": [],
+  "test_code": 0,
+  "test_fns": 0,
+  "functions": 66,
+  "kinds": {
+   "Crate-internal": 37,
+   "Trait impl": 10,
+   "Private helper": 19
+  },
+  "async_fns": 0,
+  "unsafe_fns": 0,
+  "unsafe_mentions": 2
+ }
+}
