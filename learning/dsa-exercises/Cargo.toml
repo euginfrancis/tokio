@@ -1,0 +1,10 @@
+[package]
+name = "tokio-dsa-exercises"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+# Standalone: not part of the tokio workspace.
+[workspace]
+
+[dependencies]

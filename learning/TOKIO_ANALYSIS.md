@@ -2,6 +2,7 @@
 
 > Snapshot: `tokio-rs/tokio` @ `8667843` (2026-10-03, "rt: skip non-idle tasks during taskdumps (#8568)")
 > Local clone: `/home/user/tokio`, branch `learn/explore-tokio`
+> Companion guide: [Data Structures & Algorithms in Tokio](./DSA_IN_TOKIO.md) (+ runnable [`dsa-exercises/`](./dsa-exercises))
 > Measured with [`loc.py`](./loc.py) (counts code / `//` comments / `///`+`//!` doc comments / blank lines per file)
 
 ---
