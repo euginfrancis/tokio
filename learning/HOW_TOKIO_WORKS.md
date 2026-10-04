@@ -496,10 +496,10 @@ See the [DSA guide D7, A5–A7](./DSA_IN_TOKIO.md) and the runnable version in [
 
 File: `task/coop/mod.rs`.
 - `coop::budget(f)`: sets the thread's budget to **128** (`Budget::initial()`), runs `f` (one task poll, including LIFO follow-ups), restores the old budget.
-- **`poll_proceed(cx)`** — called by every Tokio resource before doing work (channel recv, socket read, sleep, JoinHandle, …):
+- **`poll_proceed(cx)`** — called by the budget-aware Tokio resources before doing work (mpsc/oneshot receive, semaphore acquire, I/O readiness, `Sleep`, `JoinHandle`, `io::copy`, process wait, `consume_budget`; it is also public as `tokio::task::coop::poll_proceed`). Not literally every resource: e.g. plain `Notify` or `std`-only code never charge the budget:
   ```rust
   if budget.decrement().success { Ready(RestoreOnPending) }
-  else { register_waker(cx); Pending }       // out of budget: yield, and ask to be polled again
+  else { register_waker(cx); Pending }       // out of budget: register_waker = context::defer(cx.waker()) — the task is woken only AFTER the scheduler has run other tasks and polled the driver (not immediately)
   ```
   `RestoreOnPending` gives the unit back if the operation ends up `Pending` (no progress → no charge); call `.made_progress()` to keep the charge.
 - `unconstrained(fut)` disables the budget; `coop::stop()` is used by `block_in_place`.
@@ -673,7 +673,7 @@ async fn main() {
 4. **Intrusive nodes inside pinned futures** — waiters don't allocate; `Drop` unlinks them (cancellation safety).
 5. **Thin public API, fat internals**: `Mutex::lock` is 3 lines over the semaphore; `TcpListener::accept` is 3 lines over `async_io`.
 6. **`cfg_*!` macros** wrap almost every item (`macros/cfg.rs`) — features compile whole modules in or out.
-7. **Every resource calls `coop::poll_proceed`** before doing work.
+7. **Budget-aware resources call `coop::poll_proceed`** before doing work (channels, semaphore, I/O readiness, timers, `JoinHandle`, …); see [`core/task/10`](./core/task/10-coop-budget.md).
 8. **`Send` tasks go anywhere; `!Send` tasks (LocalSet / LocalRuntime) never leave their thread** — hence `remote_abort` scheduling instead of dropping directly.
 
 ### Suggested reading order for the source

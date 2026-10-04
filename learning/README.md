@@ -5,13 +5,14 @@ Personal learning material for `tokio-rs/tokio` (snapshot `8667843`). Not part o
 | File | What it is |
 |---|---|
 | [`TOKIO_FUNCTIONAL_GUIDE.md`](./TOKIO_FUNCTIONAL_GUIDE.md) | **Start here.** What Tokio does, every feature area, how the components connect, the main flows (program, task, scheduling, I/O, timers, channels, blocking, cancellation, shutdown), rules, pitfalls and a cheat sheet |
+| [`core/`](./core/README.md) | **Deep dive into the two core pieces — Task (10 pages) and Scheduler (13 pages)** — plus [interfaces & DTOs](./core/INTERFACES_AND_DTOS.md) and [module communication](./core/COMMUNICATION.md) (call matrix + 8 sequence diagrams). One file per component |
 | [`components/`](./components/README.md) | **One document per component block** (tasks, time, net/io, sync, fs/process/signal, scheduler, timer driver, I/O driver, blocking pool): responsibility & boundary, files & LOC, data structures, interactions, functions, flows, gotchas, tests |
 | [`TOKIO_ANALYSIS.md`](./TOKIO_ANALYSIS.md) | Codebase statistics: files, LOC, crates, modules, percentages, architecture overview, contribution workflow |
 | [`HOW_TOKIO_WORKS.md`](./HOW_TOKIO_WORKS.md) | **Then this, for internals.** Function-by-function walkthrough in execution order: startup, spawn, task state, worker loop, parking, waking, I/O, timers, coop, sync, blocking, `select!`, shutdown, and an end-to-end request trace |
 | [`functions/`](./functions/README.md) | Index of all 5,480 functions, categorized by component, kind (public / internal / trait impl / test) and role, with each function's doc summary. `functions.csv` has the raw data |
 | [`DSA_IN_TOKIO.md`](./DSA_IN_TOKIO.md) | 19 data structures + 22 algorithms used in the codebase, with complexity and file references |
 | [`dsa-exercises/`](./dsa-exercises) | Runnable safe-Rust mini versions (timer wheel, work-stealing queue, task state, fair semaphore, PRNG, EWMA) — `cargo test` |
-| [`loc.py`](./loc.py), [`fn_index.py`](./fn_index.py) | Scripts that regenerate the statistics and the function index |
+| [`loc.py`](./loc.py), [`fn_index.py`](./fn_index.py), [`core/core_stats.py`](./core/core_stats.py) | Scripts that regenerate the statistics, the function index and the `core/` file/test tables |
 
 Regenerate after pulling upstream:
 ```bash

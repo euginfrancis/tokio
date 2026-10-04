@@ -202,7 +202,7 @@ bit 0 RUNNING | bit 1 COMPLETE | bit 2 NOTIFIED | bit 3 JOIN_INTEREST | bit 4 JO
 ### A3. Self-tuning global queue interval (EWMA) 🟢
 **Where:** `multi_thread/stats.rs`
 **How:** Keeps an **exponentially weighted moving average** of task poll time (`alpha = 0.1`). Interval = `200 µs / avg_poll_time`, clamped to `[2, 127]` tasks. Fast tasks → check the global queue less often; slow tasks → more often.
-`ewma = alpha * sample + (1 - alpha) * ewma`
+`ewma = alpha * sample + (1 - alpha) * ewma` is the textbook form. The real code updates **once per batch of polls**, so it uses a batch-weighted alpha: `w = 1 - (1 - alpha)^n; ewma = w * mean_poll_of_batch + (1 - w) * ewma` (n = polls in the batch) — equivalent to applying the per-sample update n times with the same sample. See [`core/scheduler/10`](./core/scheduler/10-stats-and-metrics.md).
 **DSA lesson:** EWMA (used in TCP RTT estimation, load averages); feedback control.
 
 ### A4. Cooperative budgeting 🟢

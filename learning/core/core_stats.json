@@ -1,0 +1,897 @@
+{
+ "t_state": {
+  "src": [
+   {
+    "file": "tokio/src/runtime/task/state.rs",
+    "code": 399,
+    "doc": 157,
+    "fns": 41,
+    "inline_tests": 0
+   }
+  ],
+  "tests": [
+   {
+    "file": "tokio/src/runtime/tests/task.rs",
+    "code": 403,
+    "tests": 13
+   },
+   {
+    "file": "tokio/src/runtime/tests/task_combinations.rs",
+    "code": 404,
+    "tests": 1
+   },
+   {
+    "file": "tokio/tests/task_abort.rs",
+    "code": 226,
+    "tests": 8
+   },
+   {
+    "file": "tokio/tests/task_join_set.rs",
+    "code": 519,
+    "tests": 24
+   }
+  ]
+ },
+ "t_cell": {
+  "src": [
+   {
+    "file": "tokio/src/runtime/task/core.rs",
+    "code": 331,
+    "doc": 203,
+    "fns": 29,
+    "inline_tests": 1
+   }
+  ],
+  "tests": [
+   {
+    "file": "tokio/src/runtime/tests/task.rs",
+    "code": 403,
+    "tests": 13
+   }
+  ]
+ },
+ "t_raw": {
+  "src": [
+   {
+    "file": "tokio/src/runtime/task/raw.rs",
+    "code": 252,
+    "doc": 72,
+    "fns": 30,
+    "inline_tests": 0
+   }
+  ],
+  "tests": [
+   {
+    "file": "tokio/src/runtime/tests/task.rs",
+    "code": 403,
+    "tests": 13
+   }
+  ]
+ },
+ "t_harness": {
+  "src": [
+   {
+    "file": "tokio/src/runtime/task/harness.rs",
+    "code": 318,
+    "doc": 186,
+    "fns": 29,
+    "inline_tests": 0
+   }
+  ],
+  "tests": [
+   {
+    "file": "tokio/src/runtime/tests/task.rs",
+    "code": 403,
+    "tests": 13
+   },
+   {
+    "file": "tokio/src/runtime/tests/task_combinations.rs",
+    "code": 404,
+    "tests": 1
+   }
+  ]
+ },
+ "t_handles": {
+  "src": [
+   {
+    "file": "tokio/src/runtime/task/mod.rs",
+    "code": 348,
+    "doc": 259,
+    "fns": 42,
+    "inline_tests": 1
+   }
+  ],
+  "tests": [
+   {
+    "file": "tokio/src/runtime/tests/task.rs",
+    "code": 403,
+    "tests": 13
+   },
+   {
+    "file": "tokio/src/runtime/tests/task_combinations.rs",
+    "code": 404,
+    "tests": 1
+   }
+  ]
+ },
+ "t_waker": {
+  "src": [
+   {
+    "file": "tokio/src/runtime/task/waker.rs",
+    "code": 88,
+    "doc": 22,
+    "fns": 7,
+    "inline_tests": 0
+   }
+  ],
+  "tests": [
+   {
+    "file": "tokio/src/runtime/tests/task.rs",
+    "code": 403,
+    "tests": 13
+   }
+  ]
+ },
+ "t_join": {
+  "src": [
+   {
+    "file": "tokio/src/runtime/task/join.rs",
+    "code": 79,
+    "doc": 278,
+    "fns": 9,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/task/abort.rs",
+    "code": 44,
+    "doc": 51,
+    "fns": 7,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/task/error.rs",
+    "code": 99,
+    "doc": 80,
+    "fns": 11,
+    "inline_tests": 0
+   }
+  ],
+  "tests": [
+   {
+    "file": "tokio/tests/task_abort.rs",
+    "code": 226,
+    "tests": 8
+   },
+   {
+    "file": "tokio/tests/task_join_set.rs",
+    "code": 519,
+    "tests": 24
+   },
+   {
+    "file": "tokio/tests/task_panic.rs",
+    "code": 94,
+    "tests": 7
+   }
+  ]
+ },
+ "t_owned": {
+  "src": [
+   {
+    "file": "tokio/src/runtime/task/list.rs",
+    "code": 253,
+    "doc": 70,
+    "fns": 24,
+    "inline_tests": 1
+   },
+   {
+    "file": "tokio/src/util/linked_list.rs",
+    "code": 522,
+    "doc": 127,
+    "fns": 36,
+    "inline_tests": 4
+   },
+   {
+    "file": "tokio/src/util/sharded_list.rs",
+    "code": 104,
+    "doc": 38,
+    "fns": 12,
+    "inline_tests": 0
+   }
+  ],
+  "tests": [
+   {
+    "file": "tokio/src/runtime/tests/task.rs",
+    "code": 403,
+    "tests": 13
+   },
+   {
+    "file": "tokio/src/runtime/tests/loom_local.rs",
+    "code": 30,
+    "tests": 1
+   }
+  ]
+ },
+ "t_idhooks": {
+  "src": [
+   {
+    "file": "tokio/src/runtime/task/id.rs",
+    "code": 38,
+    "doc": 43,
+    "fns": 5,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/task_hooks.rs",
+    "code": 71,
+    "doc": 33,
+    "fns": 7,
+    "inline_tests": 0
+   }
+  ],
+  "tests": [
+   {
+    "file": "tokio/tests/task_id.rs",
+    "code": 265,
+    "tests": 19
+   },
+   {
+    "file": "tokio/tests/task_hooks.rs",
+    "code": 325,
+    "tests": 10
+   }
+  ]
+ },
+ "t_coop": {
+  "src": [
+   {
+    "file": "tokio/src/task/coop/mod.rs",
+    "code": 258,
+    "doc": 252,
+    "fns": 26,
+    "inline_tests": 1
+   },
+   {
+    "file": "tokio/src/task/coop/consume_budget.rs",
+    "code": 15,
+    "doc": 23,
+    "fns": 1,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/task/coop/unconstrained.rs",
+    "code": 34,
+    "doc": 6,
+    "fns": 3,
+    "inline_tests": 0
+   }
+  ],
+  "tests": [
+   {
+    "file": "tokio/tests/coop_budget.rs",
+    "code": 54,
+    "tests": 2
+   },
+   {
+    "file": "tokio/tests/task_yield_now.rs",
+    "code": 27,
+    "tests": 2
+   }
+  ]
+ },
+ "s_runtime": {
+  "src": [
+   {
+    "file": "tokio/src/runtime/runtime.rs",
+    "code": 178,
+    "doc": 385,
+    "fns": 15,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/handle.rs",
+    "code": 254,
+    "doc": 460,
+    "fns": 22,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/builder.rs",
+    "code": 586,
+    "doc": 1540,
+    "fns": 53,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/config.rs",
+    "code": 30,
+    "doc": 24,
+    "fns": 0,
+    "inline_tests": 0
+   }
+  ],
+  "tests": [
+   {
+    "file": "tokio/tests/rt_basic.rs",
+    "code": 416,
+    "tests": 16
+   },
+   {
+    "file": "tokio/tests/rt_common.rs",
+    "code": 1050,
+    "tests": 49
+   },
+   {
+    "file": "tokio/tests/rt_handle.rs",
+    "code": 93,
+    "tests": 7
+   }
+  ]
+ },
+ "s_context": {
+  "src": [
+   {
+    "file": "tokio/src/runtime/context.rs",
+    "code": 163,
+    "doc": 23,
+    "fns": 12,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/context/blocking.rs",
+    "code": 94,
+    "doc": 13,
+    "fns": 6,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/context/current.rs",
+    "code": 71,
+    "doc": 9,
+    "fns": 5,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/context/runtime.rs",
+    "code": 73,
+    "doc": 11,
+    "fns": 4,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/context/runtime_mt.rs",
+    "code": 26,
+    "doc": 5,
+    "fns": 3,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/context/scoped.rs",
+    "code": 44,
+    "doc": 3,
+    "fns": 4,
+    "inline_tests": 0
+   }
+  ],
+  "tests": [
+   {
+    "file": "tokio/tests/rt_common.rs",
+    "code": 1050,
+    "tests": 49
+   },
+   {
+    "file": "tokio/tests/rt_worker_index.rs",
+    "code": 119,
+    "tests": 10
+   }
+  ]
+ },
+ "s_current": {
+  "src": [
+   {
+    "file": "tokio/src/runtime/scheduler/current_thread/mod.rs",
+    "code": 623,
+    "doc": 131,
+    "fns": 46,
+    "inline_tests": 0
+   }
+  ],
+  "tests": [
+   {
+    "file": "tokio/src/runtime/tests/loom_current_thread.rs",
+    "code": 140,
+    "tests": 3
+   },
+   {
+    "file": "tokio/tests/rt_basic.rs",
+    "code": 416,
+    "tests": 16
+   },
+   {
+    "file": "tokio/tests/rt_common.rs",
+    "code": 1050,
+    "tests": 49
+   }
+  ]
+ },
+ "s_mt_state": {
+  "src": [
+   {
+    "file": "tokio/src/runtime/scheduler/multi_thread/mod.rs",
+    "code": 79,
+    "doc": 7,
+    "fns": 4,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/multi_thread/handle.rs",
+    "code": 105,
+    "doc": 10,
+    "fns": 11,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/mod.rs",
+    "code": 252,
+    "doc": 14,
+    "fns": 30,
+    "inline_tests": 0
+   }
+  ],
+  "tests": [
+   {
+    "file": "tokio/tests/rt_threaded.rs",
+    "code": 700,
+    "tests": 31
+   },
+   {
+    "file": "tokio/src/runtime/tests/loom_multi_thread.rs",
+    "code": 355,
+    "tests": 12
+   }
+  ]
+ },
+ "s_worker": {
+  "src": [
+   {
+    "file": "tokio/src/runtime/scheduler/multi_thread/worker.rs",
+    "code": 939,
+    "doc": 387,
+    "fns": 54,
+    "inline_tests": 0
+   }
+  ],
+  "tests": [
+   {
+    "file": "tokio/tests/rt_threaded.rs",
+    "code": 700,
+    "tests": 31
+   },
+   {
+    "file": "tokio/src/runtime/tests/loom_multi_thread.rs",
+    "code": 355,
+    "tests": 12
+   },
+   {
+    "file": "tokio/tests/rt_busy_tick.rs",
+    "code": 77,
+    "tests": 4
+   }
+  ]
+ },
+ "s_queue": {
+  "src": [
+   {
+    "file": "tokio/src/runtime/scheduler/multi_thread/queue.rs",
+    "code": 327,
+    "doc": 176,
+    "fns": 22,
+    "inline_tests": 1
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/multi_thread/overflow.rs",
+    "code": 21,
+    "doc": 0,
+    "fns": 4,
+    "inline_tests": 0
+   }
+  ],
+  "tests": [
+   {
+    "file": "tokio/src/runtime/tests/queue.rs",
+    "code": 208,
+    "tests": 7
+   },
+   {
+    "file": "tokio/src/runtime/tests/loom_multi_thread/queue.rs",
+    "code": 147,
+    "tests": 4
+   }
+  ]
+ },
+ "inject": {
+  "src": [
+   {
+    "file": "tokio/src/runtime/scheduler/inject.rs",
+    "code": 46,
+    "doc": 11,
+    "fns": 5,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/inject/metrics.rs",
+    "code": 6,
+    "doc": 0,
+    "fns": 1,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/inject/pop.rs",
+    "code": 42,
+    "doc": 1,
+    "fns": 5,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/inject/rt_multi_thread.rs",
+    "code": 124,
+    "doc": 56,
+    "fns": 15,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/inject/shared.rs",
+    "code": 68,
+    "doc": 29,
+    "fns": 8,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/inject/synced.rs",
+    "code": 23,
+    "doc": 4,
+    "fns": 1,
+    "inline_tests": 0
+   }
+  ],
+  "tests": [
+   {
+    "file": "tokio/src/runtime/tests/inject.rs",
+    "code": 32,
+    "tests": 3
+   },
+   {
+    "file": "tokio/src/runtime/tests/loom_multi_thread.rs",
+    "code": 355,
+    "tests": 12
+   }
+  ]
+ },
+ "idle": {
+  "src": [
+   {
+    "file": "tokio/src/runtime/scheduler/multi_thread/idle.rs",
+    "code": 147,
+    "doc": 54,
+    "fns": 20,
+    "inline_tests": 1
+   }
+  ],
+  "tests": [
+   {
+    "file": "tokio/tests/rt_threaded.rs",
+    "code": 700,
+    "tests": 31
+   },
+   {
+    "file": "tokio/src/runtime/tests/loom_multi_thread.rs",
+    "code": 355,
+    "tests": 12
+   }
+  ]
+ },
+ "park": {
+  "src": [
+   {
+    "file": "tokio/src/runtime/scheduler/multi_thread/park.rs",
+    "code": 212,
+    "doc": 65,
+    "fns": 13,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/util/try_lock.rs",
+    "code": 63,
+    "doc": 3,
+    "fns": 6,
+    "inline_tests": 0
+   }
+  ],
+  "tests": [
+   {
+    "file": "tokio/tests/rt_threaded.rs",
+    "code": 700,
+    "tests": 31
+   },
+   {
+    "file": "tokio/src/runtime/tests/loom_multi_thread.rs",
+    "code": 355,
+    "tests": 12
+   }
+  ]
+ },
+ "stats": {
+  "src": [
+   {
+    "file": "tokio/src/runtime/scheduler/multi_thread/stats.rs",
+    "code": 87,
+    "doc": 29,
+    "fns": 14,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/metrics/batch.rs",
+    "code": 323,
+    "doc": 36,
+    "fns": 28,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/metrics/histogram.rs",
+    "code": 494,
+    "doc": 21,
+    "fns": 24,
+    "inline_tests": 6
+   },
+   {
+    "file": "tokio/src/runtime/metrics/io.rs",
+    "code": 20,
+    "doc": 0,
+    "fns": 3,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/metrics/mock.rs",
+    "code": 9,
+    "doc": 2,
+    "fns": 2,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/metrics/mod.rs",
+    "code": 31,
+    "doc": 8,
+    "fns": 0,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/metrics/runtime.rs",
+    "code": 285,
+    "doc": 974,
+    "fns": 40,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/metrics/schedule_latency.rs",
+    "code": 35,
+    "doc": 21,
+    "fns": 3,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/metrics/schedule_latency_mock.rs",
+    "code": 14,
+    "doc": 3,
+    "fns": 2,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/metrics/scheduler.rs",
+    "code": 21,
+    "doc": 10,
+    "fns": 3,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/metrics/worker.rs",
+    "code": 78,
+    "doc": 22,
+    "fns": 7,
+    "inline_tests": 0
+   }
+  ],
+  "tests": [
+   {
+    "file": "tokio/tests/rt_metrics.rs",
+    "code": 178,
+    "tests": 7
+   },
+   {
+    "file": "tokio/tests/rt_unstable_metrics.rs",
+    "code": 742,
+    "tests": 28
+   }
+  ]
+ },
+ "block_in_place": {
+  "src": [
+   {
+    "file": "tokio/src/runtime/scheduler/multi_thread/worker.rs",
+    "code": 939,
+    "doc": 387,
+    "fns": 54,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/context/runtime_mt.rs",
+    "code": 26,
+    "doc": 5,
+    "fns": 3,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/task/blocking.rs",
+    "code": 20,
+    "doc": 205,
+    "fns": 2,
+    "inline_tests": 0
+   }
+  ],
+  "tests": [
+   {
+    "file": "tokio/tests/rt_threaded.rs",
+    "code": 700,
+    "tests": 31
+   },
+   {
+    "file": "tokio/tests/task_blocking.rs",
+    "code": 257,
+    "tests": 16
+   },
+   {
+    "file": "tokio/src/runtime/tests/loom_multi_thread.rs",
+    "code": 355,
+    "tests": 12
+   }
+  ]
+ },
+ "defer": {
+  "src": [
+   {
+    "file": "tokio/src/runtime/scheduler/defer.rs",
+    "code": 34,
+    "doc": 1,
+    "fns": 5,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/task/yield_now.rs",
+    "code": 17,
+    "doc": 37,
+    "fns": 1,
+    "inline_tests": 0
+   }
+  ],
+  "tests": [
+   {
+    "file": "tokio/tests/task_yield_now.rs",
+    "code": 27,
+    "tests": 2
+   },
+   {
+    "file": "tokio/tests/coop_budget.rs",
+    "code": 54,
+    "tests": 2
+   },
+   {
+    "file": "tokio/src/runtime/tests/loom_multi_thread/yield_now.rs",
+    "code": 29,
+    "tests": 1
+   }
+  ]
+ },
+ "shutdown": {
+  "src": [
+   {
+    "file": "tokio/src/runtime/runtime.rs",
+    "code": 178,
+    "doc": 385,
+    "fns": 15,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/scheduler/multi_thread/worker.rs",
+    "code": 939,
+    "doc": 387,
+    "fns": 54,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/blocking/pool.rs",
+    "code": 560,
+    "doc": 108,
+    "fns": 41,
+    "inline_tests": 0
+   }
+  ],
+  "tests": [
+   {
+    "file": "tokio/tests/rt_threaded.rs",
+    "code": 700,
+    "tests": 31
+   },
+   {
+    "file": "tokio/tests/rt_common.rs",
+    "code": 1050,
+    "tests": 49
+   },
+   {
+    "file": "tokio/src/runtime/tests/loom_multi_thread/shutdown.rs",
+    "code": 21,
+    "tests": 1
+   },
+   {
+    "file": "tokio/src/runtime/tests/task_combinations.rs",
+    "code": 404,
+    "tests": 1
+   }
+  ]
+ },
+ "driver": {
+  "src": [
+   {
+    "file": "tokio/src/runtime/driver.rs",
+    "code": 299,
+    "doc": 15,
+    "fns": 33,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/park.rs",
+    "code": 298,
+    "doc": 84,
+    "fns": 31,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/io/driver.rs",
+    "code": 274,
+    "doc": 52,
+    "fns": 16,
+    "inline_tests": 1
+   },
+   {
+    "file": "tokio/src/runtime/signal/mod.rs",
+    "code": 74,
+    "doc": 43,
+    "fns": 7,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/process.rs",
+    "code": 30,
+    "doc": 4,
+    "fns": 4,
+    "inline_tests": 0
+   },
+   {
+    "file": "tokio/src/runtime/time/mod.rs",
+    "code": 276,
+    "doc": 139,
+    "fns": 18,
+    "inline_tests": 0
+   }
+  ],
+  "tests": [
+   {
+    "file": "tokio/tests/rt_common.rs",
+    "code": 1050,
+    "tests": 49
+   },
+   {
+    "file": "tokio/src/runtime/tests/loom_current_thread.rs",
+    "code": 140,
+    "tests": 3
+   }
+  ]
+ }
+}

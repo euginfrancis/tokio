@@ -61,7 +61,7 @@ When a future returns `Pending`, it first hands its `Waker` to whoever will caus
 The runtime = **scheduler** (decides which task to poll next, on which thread) + **drivers** (the I/O event loop and the timer system) + a **blocking thread pool** (for work that can't be async). You usually create it with `#[tokio::main]`.
 
 ### ⑤ Cooperative scheduling — "tasks must yield"
-Tokio cannot interrupt a task. A task only gives the thread back when it hits an `.await` that returns `Pending`. **If you run a long CPU loop or a blocking call without `.await`, you freeze that worker thread** and every task waiting on it. (Tokio helps with a per-task *budget* that forces Tokio operations to yield occasionally, but it can't fix code that never awaits.)
+Tokio cannot interrupt a task. A task only gives the thread back when it hits an `.await` that returns `Pending`. **If you run a long CPU loop or a blocking call without `.await`, you freeze that worker thread** and every task waiting on it. (Tokio helps with a per-task *budget* that makes budget-aware Tokio operations — channels, semaphores, I/O readiness, timers, join handles — return `Pending` after ~128 units so other tasks and the driver get a turn, but it can't fix code that never awaits.)
 
 ---
 
